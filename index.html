@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordeiro Patriota - Portfólio de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h4 class="hero-title">Cordeiro</h4>
+            <h1 class="hero-title">Patriota</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">Cortes de Cordeiro Premium</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Cart Trigger and Drawer -->
+            <button class="cart-fab" type="button" aria-label="Abrir carrinho">
+                🛒 <span class="cart-badge" data-cart-count>0</span>
+            </button>
+            <aside class="cart-drawer" aria-hidden="true">
+                <div class="cart-header">
+                    <h3>Seu carrinho</h3>
+                    <button class="cart-close" type="button" aria-label="Fechar">×</button>
+                </div>
+                <div class="cart-body" data-cart-items>
+                    <p class="cart-empty">Seu carrinho está vazio.</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-customer">
+                        <div class="cart-field">
+                            <label for="cart-name">Nome</label>
+                            <input id="cart-name" type="text" placeholder="Seu nome" />
+                        </div>
+                        <div class="cart-field">
+                            <label for="cart-phone">Telefone</label>
+                            <input id="cart-phone" type="tel" placeholder="(11) 99999-9999" />
+                        </div>
+                    </div>
+                    <label class="cart-notes-label" for="cart-notes">Observações / Endereço (opcional)</label>
+                    <textarea id="cart-notes" class="cart-notes" placeholder="Ex.: Entregar na Rua X, nº Y, apto Z. Sem cebola."></textarea>
+                    <div class="cart-subtotal">
+                        <span>Subtotal</span>
+                        <strong data-cart-subtotal>R$ 0,00</strong>
+                    </div>
+                    <button class="cart-checkout" type="button" disabled>Enviar pedido no WhatsApp</button>
+                </div>
+            </aside>
+            <section class="intro">
+                <h2>Nossos Produtos</h2>
+                <p>Carnes de cordeiro premium, cuidadosamente selecionadas e preparadas para oferecer a máxima qualidade e sabor.</p>
+            </section>
+
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card" data-name="Carne Moída" data-price="63.21">
+                    <div class="product-image">
+                        <img src="images/carne-moida-de-cordeiro.png" alt="Carne Moída de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Carne Moída</h3>
+                        <p class="product-description">Carne moída premium da fraldinha, ideal para cozidos e preparos.</p>
+                        <div class="product-price">R$ 63,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card" data-name="Carré Curto" data-price="118.21">
+                    <div class="product-image">
+                        <img src="images/carre-curto-de-cordeiro.png" alt="Carré Curto de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Carré Curto</h3>
+                        <p class="product-description">Corte nobre e suculento, perfeito para ocasiões especiais.</p>
+                        <div class="product-price">R$ 118,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card" data-name="Contrafilé" data-price="114.46">
+                    <div class="product-image">
+                        <img src="images/contrafile-de-cordeiro.png" alt="Contrafilé de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Contrafilé</h3>
+                        <p class="product-description">Corte macio e saboroso, ideal para grelhados e assados.</p>
+                        <div class="product-price">R$ 114,46</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-card" data-name="Costela" data-price="68.21">
+                    <div class="product-image">
+                        <img src="images/costela-de-cordeiro.png" alt="Costela de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Costela</h3>
+                        <p class="product-description">Costela suculenta com osso, perfeita para cozimentos lentos.</p>
+                        <div class="product-price">R$ 68,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="product-card" data-name="Filé Mignon" data-price="120.71">
+                    <div class="product-image">
+                        <img src="images/file-mignon-de-cordeiro.png" alt="Filé Mignon de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Filé  Mignon</h3>
+                        <p class="product-description">O corte mais nobre, extremamente macio e saboroso.</p>
+                        <div class="product-price">R$ 120,71</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="product-card" data-name="Linguiça" data-price="75.71">
+                    <div class="product-image">
+                        <img src="images/linguica-de-cordeiro.png" alt="Linguiça de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Linguiça</h3>
+                        <p class="product-description">Linguiça artesanal temperada com especiarias selecionadas.</p>
+                        <div class="product-price">R$ 75,71</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 7 -->
+                <div class="product-card" data-name="Paleta" data-price="78.21">
+                    <div class="product-image">
+                        <img src="images/paleta-de-cordeiro.png" alt="Paleta de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Paleta</h3>
+                        <p class="product-description">Corte tradicional com osso, ideal para assados e ensopados.</p>
+                        <div class="product-price">R$ 78,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 8 -->
+                <div class="product-card" data-name="Paleta Desossada" data-price="84.46">
+                    <div class="product-image">
+                        <img src="images/paleta-sem-osso-de-cordeiro.png" alt="Paleta Desossada de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Paleta Desossada</h3>
+                        <p class="product-description">Paleta sem osso, prática e versátil para diversos preparos.</p>
+                        <div class="product-price">R$ 84,46</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 9 -->
+                <div class="product-card" data-name="Pernil" data-price="82.96">
+                    <div class="product-image">
+                        <img src="images/pernil-de-cordeiro.png" alt="Pernil de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pernil</h3>
+                        <p class="product-description">Pernil inteiro com osso, perfeito para grandes ocasiões.</p>
+                        <div class="product-price">R$ 82,96</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 10 -->
+                <div class="product-card" data-name="Pernil Desossado" data-price="93.21">
+                    <div class="product-image">
+                        <img src="images/pernil-sem-osso-de-cordeiro.png" alt="Pernil Desossado de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pernil Desossado</h3>
+                        <p class="product-description">Pernil sem osso, fácil de fatiar e preparar.</p>
+                        <div class="product-price">R$ 93,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 11 -->
+                <div class="product-card" data-name="Pernil Fatiado" data-price="82.96">
+                    <div class="product-image">
+                        <img src="images/pernil-fatiado-de-cordeiro.png" alt="Pernil Fatiado de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pernil Fatiado</h3>
+                        <p class="product-description">Pernil já fatiado, pronto para o consumo.</p>
+                        <div class="product-price">R$ 82,96</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Produto 12 -->
+                <div class="product-card" data-name="Picanha" data-price="123.21">
+                    <div class="product-image">
+                        <img src="images/picanha-de-cordeiro.png" alt="Picanha de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Picanha</h3>
+                        <p class="product-description">Corte premium com capa de gordura, ideal para churrascos.</p>
+                        <div class="product-price">R$ 123,21</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Produto 13 -->
+                <div class="product-card" data-name="Stinco" data-price="96.96">
+                    <div class="product-image">
+                        <img src="images/stinco-de-cordeiro.png" alt="Stinco de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Stinco</h3>
+                        <p class="product-description">Corte saboroso e firme, é ideal para preparos que exigem cozimento lento, como ensopados e cozidos.</p>
+                        <div class="product-price">R$ 96,96</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Produto 14 -->
+                <div class="product-card" data-name="Fraldinha" data-price="85.71">
+                    <div class="product-image">
+                        <img src="images/fraldinha-de-cordeiro2.png" alt="Fraldinha de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fraldinha</h3>
+                        <p class="product-description">Fraldinha, cozinha rapidamente e é ideal para grelhar, assar ou cozinhar em panela, especialmente se for marinada</p>
+                        <div class="product-price">R$ 85,71</div>
+                        <button class="add-to-cart" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Produto 15
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/guisado-de-cordeiro.png" alt="Guisado de Cordeiro">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Guisado</h3>
+                        <p class="product-description">Guisado, corte macio e saboroso, ideal para grelhados e assados.</p>
+                        <div class="product-price">R$ 66,96</div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Produtos sem imagem -->
+            <!-- <section class="additional-products">
+                <h3>Outros Produtos Disponíveis</h3>
+                <div class="text-products">
+                    <div class="text-product">
+                        <span class="product-name">Carré Francês</span>
+                        <span class="product-price">R$ 145,71</span>
+                    </div>
+                    <div class="text-product">
+                        <span class="product-name">Guisado</span>
+                        <span class="product-price">R$ 66,96</span>
+                    </div>
+                    <div class="text-product">
+                        <span class="product-name">Picado</span>
+                        <span class="product-price">R$ 43,21</span>
+                    </div>
+                    <div class="text-product">
+                        <span class="product-name">Fraldinha</span>
+                        <span class="product-price">R$ 85,71</span>
+                    </div>
+                    <div class="text-product">
+                        <span class="product-name">Stinco</span>
+                        <span class="product-price">R$ 96,96</span>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tuareg Distribuidora. Todos os direitos reservados.</p>
+            <p>Carnes premium de cordeiro para os paladares mais exigentes.</p>
+        </div>
+    </footer>
+</body>
+<script>
+(function() {
+    // número do WhatsApp que receberá o pedido (somente dígitos, com DDI e DDD)
+    const businessPhone = "5511940656233";
+    const productsGrid = document.querySelector('.products-grid');
+    const addButtons = document.querySelectorAll('.add-to-cart');
+    const cartFab = document.querySelector('.cart-fab');
+    const cartDrawer = document.querySelector('.cart-drawer');
+    const cartClose = document.querySelector('.cart-close');
+    const cartItemsEl = document.querySelector('[data-cart-items]');
+    const cartSubtotalEl = document.querySelector('[data-cart-subtotal]');
+    const cartCountEl = document.querySelector('[data-cart-count]');
+    const checkoutBtn = document.querySelector('.cart-checkout');
+    const cartNotesEl = document.getElementById('cart-notes');
+    const cartNameEl = document.getElementById('cart-name');
+    const cartPhoneEl = document.getElementById('cart-phone');
+
+    /** @type {{id:string,name:string,price:number,qty:number}[]} */
+    let cart = [];
+
+    function formatBRL(value) {
+        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    function saveCart() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function loadCart() {
+        try {
+            const raw = localStorage.getItem('cart');
+            cart = raw ? JSON.parse(raw) : [];
+        } catch(_) { cart = []; }
+    }
+
+    function getSubtotal() {
+        return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+    }
+
+    function updateBadge() {
+        const totalQty = cart.reduce((s, i) => s + i.qty, 0);
+        cartCountEl.textContent = String(totalQty);
+    }
+
+    function renderCart() {
+        cartItemsEl.innerHTML = '';
+        if (cart.length === 0) {
+            const p = document.createElement('p');
+            p.className = 'cart-empty';
+            p.textContent = 'Seu carrinho está vazio.';
+            cartItemsEl.appendChild(p);
+            cartSubtotalEl.textContent = 'R$ 0,00';
+            checkoutBtn.disabled = true;
+            updateBadge();
+            return;
+        }
+
+        cart.forEach((item) => {
+            const row = document.createElement('div');
+            row.className = 'cart-item';
+
+            const left = document.createElement('div');
+            const title = document.createElement('div');
+            title.className = 'cart-item-title';
+            title.textContent = `${item.name}`;
+            const price = document.createElement('div');
+            price.className = 'cart-item-price';
+            price.textContent = `${formatBRL(item.price)} / kg`;
+            left.appendChild(title);
+            left.appendChild(price);
+
+            const right = document.createElement('div');
+            const qty = document.createElement('div');
+            qty.className = 'cart-qty';
+            const minus = document.createElement('button'); minus.type = 'button'; minus.textContent = '−'; minus.style.width = '20px'; minus.style.height = '28px'; minus.style.color = 'red';
+            const input = document.createElement('input'); input.type = 'text'; input.value = String(item.qty); input.readOnly = true;
+            const plus = document.createElement('button'); plus.type = 'button'; plus.textContent = '+'; plus.style.width = '20px'; plus.style.height = '28px'; plus.style.color = 'green';
+            const remove = document.createElement('button'); remove.type = 'button'; remove.textContent = 'remover'; remove.style.marginLeft = '8px'; remove.style.color = 'red';
+
+            minus.addEventListener('click', () => changeQty(item.id, item.qty - 1));
+            plus.addEventListener('click', () => changeQty(item.id, item.qty + 1));
+            remove.addEventListener('click', () => removeItem(item.id));
+
+            qty.appendChild(minus); qty.appendChild(input); qty.appendChild(plus); qty.appendChild(remove);
+            right.appendChild(qty);
+
+            row.appendChild(left);
+            row.appendChild(right);
+            cartItemsEl.appendChild(row);
+        });
+
+        cartSubtotalEl.textContent = formatBRL(getSubtotal());
+        updateCheckoutEnabled();
+        updateBadge();
+    }
+
+    function onlyDigits(value) {
+        return value.replace(/\D+/g, '');
+    }
+
+    function formatBRPhone(digits) {
+        if (digits.length > 11) digits = digits.slice(0, 11);
+        if (digits.length <= 10) {
+            // (11) 3456-7890
+            const p1 = digits.slice(0, 2);
+            const p2 = digits.slice(2, 6);
+            const p3 = digits.slice(6, 10);
+            return `(${p1}${p1.length===2?'':''})${p2?` ${p2}`:''}${p3?`-${p3}`:''}`.replace('( )', '');
+        } else {
+            // (11) 93456-7890
+            const p1 = digits.slice(0, 2);
+            const p2 = digits.slice(2, 7);
+            const p3 = digits.slice(7, 11);
+            return `(${p1}) ${p2}-${p3}`;
+        }
+    }
+
+    function isValidName(name) {
+        return !!name && name.trim().length >= 2;
+    }
+
+    function isValidBRPhoneMasked(masked) {
+        const digits = onlyDigits(masked);
+        return digits.length === 10 || digits.length === 11;
+    }
+
+    function updateCheckoutEnabled() {
+        const hasItems = cart.length > 0;
+        const nameOk = cartNameEl ? isValidName(cartNameEl.value) : true;
+        const phoneOk = cartPhoneEl ? isValidBRPhoneMasked(cartPhoneEl.value) : true;
+        checkoutBtn.disabled = !(hasItems && nameOk && phoneOk);
+        if (cartNameEl) cartNameEl.classList.toggle('invalid', !nameOk);
+        if (cartPhoneEl) cartPhoneEl.classList.toggle('invalid', !phoneOk);
+    }
+
+    function changeQty(id, newQty) {
+        const item = cart.find(i => i.id === id);
+        if (!item) return;
+        if (newQty <= 0) {
+            cart = cart.filter(i => i.id !== id);
+        } else {
+            item.qty = newQty;
+        }
+        saveCart();
+        renderCart();
+    }
+
+    function removeItem(id) {
+        cart = cart.filter(i => i.id !== id);
+        saveCart();
+        renderCart();
+    }
+
+    function addProductFromCard(cardEl) {
+        const name = cardEl.getAttribute('data-name') || cardEl.querySelector('.product-name')?.textContent?.trim() || 'Produto';
+        const priceAttr = cardEl.getAttribute('data-price');
+        let price = 0;
+        if (priceAttr) {
+            price = Number(priceAttr);
+        } else {
+            const priceText = cardEl.querySelector('.product-price')?.textContent || '';
+            price = Number(priceText.replace(/[^0-9,\.]/g, '').replace('.', '').replace(',', '.')) || 0;
+        }
+        const id = name.toLowerCase().replace(/\s+/g, '-') + '-' + price.toFixed(2);
+        const existing = cart.find(i => i.id === id);
+        if (existing) {
+            existing.qty += 1;
+        } else {
+            cart.push({ id, name, price, qty: 1 });
+        }
+        saveCart();
+        renderCart();
+    }
+
+    function buildWhatsAppUrl() {
+        if (cart.length === 0) return '#';
+        const lines = cart.map(i => `• ${i.name} x${i.qty} — ${formatBRL(i.price)}`);
+        const subtotal = formatBRL(getSubtotal());
+        const customerNameStr = cartNameEl && cartNameEl.value.trim() ? `\nNome: ${cartNameEl.value.trim()}` : '';
+        const customerPhoneStr = cartPhoneEl && cartPhoneEl.value.trim() ? `\nTelefone: ${cartPhoneEl.value.trim()}` : '';
+        const notes = (cartNotesEl && cartNotesEl.value.trim()) ? `\nObservações/Endereço: ${cartNotesEl.value.trim()}` : '';
+        const header = `${encodeURIComponent('Olá! Quero fazer um pedido:')}`;
+        const items = encodeURIComponent(lines.join('\n'));
+        const tail = encodeURIComponent(`\n\nSubtotal: ${subtotal}${customerNameStr}${customerPhoneStr}${notes}`);
+        const text = `${header}%0A%0A${items}${tail}%0A`;
+        return `https://wa.me/${businessPhone}?text=${text}`;
+    }
+
+    // events
+    addButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.currentTarget.closest('.product-card');
+            if (card) addProductFromCard(card);
+        });
+    });
+    if (cartPhoneEl) {
+        cartPhoneEl.addEventListener('input', () => {
+            const digits = onlyDigits(cartPhoneEl.value);
+            cartPhoneEl.value = formatBRPhone(digits);
+            updateCheckoutEnabled();
+        });
+        cartPhoneEl.addEventListener('blur', updateCheckoutEnabled);
+    }
+    if (cartNameEl) {
+        cartNameEl.addEventListener('input', updateCheckoutEnabled);
+        cartNameEl.addEventListener('blur', updateCheckoutEnabled);
+    }
+    cartFab.addEventListener('click', () => {
+        cartDrawer.classList.add('open');
+        cartDrawer.setAttribute('aria-hidden', 'false');
+        updateCheckoutEnabled();
+    });
+    cartClose.addEventListener('click', () => {
+        cartDrawer.classList.remove('open');
+        cartDrawer.setAttribute('aria-hidden', 'true');
+    });
+    checkoutBtn.addEventListener('click', () => {
+        updateCheckoutEnabled();
+        if (checkoutBtn.disabled) return;
+        const url = buildWhatsAppUrl();
+        if (url !== '#') {
+            window.open(url, '_blank');
+            // limpar carrinho e observações após envio
+            cart = [];
+            saveCart();
+            if (cartNotesEl) cartNotesEl.value = '';
+            if (cartNameEl) cartNameEl.value = '';
+            if (cartPhoneEl) cartPhoneEl.value = '';
+            renderCart();
+            cartDrawer.classList.remove('open');
+            cartDrawer.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // init
+    loadCart();
+    renderCart();
+    updateCheckoutEnabled();
+})();
+</script>
+</html>
