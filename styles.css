@@ -234,16 +234,16 @@ body {
 
 .footer p {
     font-family: 'Poppins', serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.footer p:last-child {
+/* .footer p:last-child {
     opacity: 0.8;
     font-size: 0.9rem;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
