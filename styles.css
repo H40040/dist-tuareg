@@ -49,7 +49,6 @@ body {
 }
 
 .hero h1 {
-    font-size: 5.5rem;
     font-weight: 700;
     color: var(--white);
     text-transform: uppercase;
@@ -71,7 +70,6 @@ body {
 }
 
 .hero-divider {
-    width: 370px;
     height: 2px;
     background: #c39624;
     margin: 45px auto;
@@ -250,7 +248,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     
     .hero-subtitle {
